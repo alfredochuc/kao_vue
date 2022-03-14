@@ -1,0 +1,25 @@
+$white: #fff;
+$blackMedium: #232731;
+$blackHigth: #181a20;
+body{
+    background: $blackMedium;
+}
+
+
+$phone: 'max-width: 480px';
+$tablet: 'max-width: 767px';
+$tablet-landscape: 'max-width: 979px';
+$desktop: 'max-width: 1090px';
+
+@mixin responsive($breakpoint, $media: all) {
+	@media only #{$media} and ($breakpoint) {
+		@content;
+	}
+}
+  .row{
+    margin: 0 auto;
+  }
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
